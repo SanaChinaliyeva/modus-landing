@@ -1,0 +1,31 @@
+@import variables
+
+=btn($color)
+  display: inline-block
+  border-radius: 5px
+  text-transform: uppercase
+  color: $color-inverted
+  background: $color
+  -webkit-box-shadow: inset 0 -2px 5px 0 darken($color, 20)
+  -moz-box-shadow: inset 0 -2px 5px 0 darken($color, 20)
+  box-shadow: inset 0 -2px 5px 0 darken($color, 20)
+  font-weight: $font-semibold
+  font-size: 20px
+  padding: 12px 44px
+  border-radius: 5px
+  margin-top: 3px
+
+.btn-accent
+  +btn($color-accent)
+  align-self: flex-end
+  &:hover
+    text-decoration: none
+    color: $color-inverted
+
+.btn-normal
+  +btn($color-blue)
+  margin-bottom: -25%
+  margin-top: 10%
+  &:hover
+    text-decoration: none
+    color: $color-inverted

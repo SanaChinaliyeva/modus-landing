@@ -1,0 +1,43 @@
+@import variables
+
+.promo
+  position: relative
+  &-img
+    display: block
+    width: 100%
+    height: auto
+    +desktop
+      height: 82vh
+  &-in
+    position: absolute
+    max-width: 470px
+    top: 0 
+    left: 0
+    +tablet
+      top: 12%
+      left: 17%
+    +desktop
+      top: 25.5%
+      left: 33%
+  &-title
+    text-transform: uppercase
+    color: $color-inverted
+    font-size: 24px
+    background: #e2534b
+    font-weight: $font-extrabold
+    border-radius: 5px
+    padding: 0 5px
+    line-height: 0.9
+    +tablet
+      font-size: 52px
+  &-subtitle
+    font-size: 12px
+    color: $color-inverted
+    background: rgba(0, 0, 0, 0.5)
+    border-radius: 5px
+    margin-top: 15px
+    padding: 3px 0 11px
+    +tablet
+      font-size: 16px
+      line-height: 1.75
+

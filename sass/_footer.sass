@@ -1,0 +1,56 @@
+@import variables
+
+.footer
+  background: $color-blue left 10px repeat-x
+  background-image: url(../images/pattern-down2.png)
+  color: $color-inverted
+  font-size: $fz-small
+  padding: 4.5% 5.5% 5%
+  box-sizing: border-box
+  &-about-text
+    line-height: 1.7
+  &-col-about
+    width: percentage(370px / 1170px)
+    min-width: 260px
+  &-col-contacts
+    width: percentage(230px / 1170px)
+    min-width: 230px 
+  &-col-blog
+    width: percentage(375px / 1170px)
+    min-width: 260px
+  &-link
+    color: $color-inverted
+    font-size: 20px
+    font-weight: $font-semibold
+    font-style: italic
+    &:hover
+      color: $color-inverted
+      text-decoration: none
+
+
+.logo-footer,
+.footer-title,
+.blog-date
+  color: $color-blue-darker
+  font-size: 20px
+  margin-bottom: 20px
+
+.logo-footer
+  font-size: 30px
+
+.blog
+  &-date
+    display: block
+    font-size: $fz-small
+  &-link
+    color: inherit
+    &:hover
+      color: inherit
+      text-decoration: none
+  &-img
+    border-radius: 5px
+    margin: 4px 20px 0 0
+
+.bottom-footer
+  background: lighten($color-grey, 30)
+  padding: 18px 0

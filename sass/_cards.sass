@@ -1,0 +1,20 @@
+@import variables
+@import buttons
+
+.card
+  padding: 37px 15px
+  box-sizing: border-box
+  min-width: 250px
+  +desktop
+    &:hover .card-icon,
+    &:hover .btn-normal
+      color: $color-accent
+  &-icon
+    font-size: 56px
+    color: $color-blue
+  &-title
+    color: darken($color-grey, 20)
+    font-size: 16px
+    font-weight: $font-extrabold
+    text-transform: uppercase
+    margin-bottom: 29px

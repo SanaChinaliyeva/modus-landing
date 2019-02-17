@@ -1,0 +1,38 @@
+@import variables
+
+.header
+  background: $color-blue bottom left repeat-x
+  background-image: url(../images/pattern-up.png)
+  padding: 25px 0
+ 
+.menu
+  display: none
+  &-list
+    padding: 0
+    margin: 0
+    list-style: none
+  &-link
+    color: $color-inverted
+    font-size: $fz-small
+    display: block
+    padding: 10px 0
+    margin-right: 41px
+    text-transform: uppercase
+    &:hover
+      color: $color-inverted
+      text-decoration: none 
+    +desktop
+      padding: 5px 3px
+      &:hover
+          background: $color-blue-darker
+          box-shadow: 0 1px 1px $color-darkblue
+          border-radius: 5px
+  &-item:last-child .menu-link
+    margin-right: 0
+          
+.bars-check:checked ~ .menu
+  display: block
+
+.label-text
+  color: $color-inverted
+  font-size: 24px

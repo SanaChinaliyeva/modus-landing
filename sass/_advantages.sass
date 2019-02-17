@@ -1,0 +1,89 @@
+@import variables
+@import cards
+
+
+.advantages
+  padding: 3.5% 0 5.5%
+  text-align: left
+  &-title
+    font-size: 40px
+    color: $color-accent
+    font-weight: $font-semibold
+    text-transform: uppercase
+    margin-bottom: 2px
+  &-block-title
+    @extend .card-title
+    text-transform: capitalize
+    margin-bottom: 33px    
+  &-link
+    color: $color-accent
+    text-decoration: underline
+    &:hover
+      @extend .advantages-link
+  &-block
+    margin-top: 4.5%
+  &-list
+    padding: 0
+    margin: 0
+    list-style: none
+    &-item
+      margin-bottom: 7px
+    &-item::before
+      content: ""
+      color: $color-accent
+      background: url(../images/ic-arrow.png) center no-repeat
+      display: inline-block
+      width: 10px
+      height: 12px
+      margin-right: 5px
+
+.review-title
+      margin-bottom: 26px
+
+.review-in
+  background: $color-inverted
+  border-radius: 5px
+  position: relative
+  padding: 10px 17px 13px
+  line-height: 1.9
+  font-size: 13px
+  &::after
+    content: ""
+    display: inline-block
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 25px 25px 0
+    border-color: transparent #ffffff transparent transparent
+    position: absolute
+    left: 7%
+    bottom: -24px
+  &-author
+    color: darken($color-grey, 20)
+    margin-left: 22%
+    font-size: 16px
+    margin-top: 8px
+    display: inline-block
+
+
+
+//----------- Grid ---------------
+.narrow,
+.review
+  width: percentage(270px / 1170px)
+  min-width: 270px
+
+.narrow
+  margin-left: 13px
+
+.about
+  +tablet
+    width: 30%
+  +desktop
+    width: 46.717949%
+  min-width: 150px
+  &-text
+    line-height: 1.75
+
+// --------------------------
+

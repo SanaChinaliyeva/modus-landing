@@ -1,0 +1,22 @@
+
+// Media queries
+=tablet
+  @media screen and (min-width: 576px)
+    @content
+
+=desktop
+  @media screen and (min-width: 900px)
+    @content
+    .card 
+      width: percentage(270px / 1170px)
+
+
+=placeholder
+  &::-webkit-input-placeholder 
+    @content
+  &::-moz-placeholder 
+    @content
+  &:-ms-input-placeholder 
+    @content
+  &:-moz-placeholder 
+    @content
